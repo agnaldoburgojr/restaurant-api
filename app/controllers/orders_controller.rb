@@ -1,4 +1,5 @@
 class OrdersController < ApplicationController
+  before_action :authorize_request
   before_action :set_order, only: [:show, :update, :destroy]
 
   # GET /orders
